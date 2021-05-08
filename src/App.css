@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 button {
@@ -22,4 +25,12 @@ button:hover {
 .project {
   border-bottom: solid black 3px;
   padding: 10px;
+}
+
+.navItem {
+  color: white;
+}
+
+.navItem:hover {
+  color: skyblue;
 }

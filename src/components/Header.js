@@ -5,7 +5,11 @@ function Header(props) {
     const navStyle = {
         display: "flex",
         justifyContent: "space-around",
-        border: "3px solid black",
+        backgroundColor: "black",
+        fontSize: "20px",
+        position: "fixed",
+        top: "0",
+        fontWeight: "900",
         padding: "8px",
         width: "100%",
         margin: "auto",
@@ -13,16 +17,15 @@ function Header(props) {
 
     return (
         <header>
-            <h1>My Portfolio Page</h1>
             <nav style={navStyle}>
                 <Link to='/'>
-                    <div>HOME</div>
+                    <div className="navItem">HOME</div>
                 </Link>
                 <Link to='/about'>
-                    <div>About</div>
+                    <div className="navItem">ABOUT</div>
                 </Link>
                 <Link to='/projects'>
-                    <div>PROJECTS</div>
+                    <div className="navItem">PROJECTS</div>
                 </Link>
             </nav>
         </header>

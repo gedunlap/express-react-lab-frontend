@@ -9,6 +9,7 @@ import {Route, Switch} from "react-router-dom"
 import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
+import Contact from './pages/Contact'
 
 
 function App() {
@@ -27,6 +28,9 @@ function App() {
         </Route>
         <Route path='/about'>
           <About URL={URL} />
+        </Route>
+        <Route path='/contact'>
+          <Contact URL={URL} />
         </Route>
       </Switch>
       <Footer />

@@ -18,6 +18,7 @@ function Header(props) {
     return (
         <header>
             <nav style={navStyle}>
+                <div className="navName">Garrett Dunlap</div>
                 <Link to='/'>
                     <div className="navItem">HOME</div>
                 </Link>

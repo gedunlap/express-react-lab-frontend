@@ -5,6 +5,70 @@
   margin-bottom: 100px;
 }
 
+.body {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "icon icon hello hello"
+  "icon icon hello hello"
+  "mid mid mid mid"
+  "skill skill icon2 icon2"
+  "icon3 icon3 skill2 skill2"
+  ;
+  height: 100vh;
+}
+
+.hello {
+  grid-area: hello;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.icon {
+  grid-area: icon;
+  justify-self: center;
+  align-self: center;
+  border-radius: 200px;
+  margin: 50px;
+}
+
+.mid  {
+  background-color: slateblue;
+  height: 500px;
+  grid-area: mid;
+}
+
+.skill {
+  grid-area: skill;
+  background-color: black;
+  height: 300px
+}
+
+.icon2 {
+  grid-area: icon2;
+  background-color: slategray;
+  height: 300px;
+}
+
+.icon2 > img {
+  width:100px;
+}
+
+.icon3 {
+  grid-area: icon3;
+  background-color: teal;
+  height: 300px;
+}
+
+.skill2 {
+  grid-area: skill2;
+  background-color: darkgoldenrod;
+  height: 300px;
+}
+
+
 button {
   background-color: skyblue;
   border-color: skyblue;
@@ -27,10 +91,19 @@ button:hover {
   padding: 10px;
 }
 
+.navName {
+  color: teal;
+}
+
 .navItem {
   color: white;
 }
 
 .navItem:hover {
   color: skyblue;
+}
+
+.email {
+  color: teal;
+  text-decoration: underline;
 }

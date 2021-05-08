@@ -15,14 +15,17 @@ function Projects(props) {
     }
 
     //make an initial call for data inside of useEffect so it only happens once on componenet load
-    useEffect(() => getProjectData(), [])
+    useEffect(() => {
+        getProjectData()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
 
     //define a function taht will return the JSX needed once we get the data
     const loaded = () => {
         return projects.map((project) => (
             <div>
                 <h1>{project.name}</h1>
-                <img src={project.img} />
+                <img src={project.img} alt="" />
                 <a href={project.git}>
                     <button>Github</button>
                 </a>

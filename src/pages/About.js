@@ -17,7 +17,6 @@ function About(props) {
     //make an inital call for the data inside useEffect, so it only happens once on component load
     useEffect(() => {
         getAboutData()
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     //define a function that will return the JSX neede once we get the data

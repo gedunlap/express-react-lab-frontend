@@ -7,7 +7,7 @@ function Header(props) {
         justifyContent: "space-around",
         border: "3px solid black",
         padding: "8px",
-        width: "90%",
+        width: "100%",
         margin: "auto",
     }
 
